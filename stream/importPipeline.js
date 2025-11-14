@@ -17,7 +17,7 @@ streams.categoryMapper = require('./category_mapper');
 streams.addendumMapper = require('./addendum_mapper');
 streams.popularityMapper = require('./popularity_mapper');
 streams.dbMapper = require('pelias-model').createDocumentMapperStream;
-streams.elasticsearch = require('pelias-dbclient');
+streams.dbClient = require('flyingdev-pelias-dbclient-opensearch');
 
 // default import pipeline
 streams.import = function(){
@@ -32,7 +32,7 @@ streams.import = function(){
     .pipe( streams.popularityMapper() )
     .pipe( streams.adminLookup() )
     .pipe( streams.dbMapper() )
-    .pipe( streams.elasticsearch({name: 'openstreetmap'}) );
+    .pipe( streams.dbClient({name: 'openstreetmap'}) );
 };
 
 module.exports = streams;

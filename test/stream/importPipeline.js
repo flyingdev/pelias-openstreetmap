@@ -19,7 +19,7 @@ module.exports.tests.interface = function(test, common) {
     'addendumMapper',
     'popularityMapper',
     'dbMapper',
-    'elasticsearch',
+    'dbClient',
     'import'
   ];
 

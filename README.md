@@ -26,7 +26,7 @@ We think open data, open source, and open strategy win over proprietary solution
 
 ## Overview
 
-The OpenStreetMap importer handles importing data from [OpenStreetMap](https://www.openstreetmap.org/) into Elasticsearch for use by Pelias.
+The OpenStreetMap importer handles importing data from [OpenStreetMap](https://www.openstreetmap.org/) into OpenSearch for use by Pelias.
 
 It includes logic for filtering to select only data relevant for geocoding, transforming it to match the Pelias data model, and augmenting the data as required.
 

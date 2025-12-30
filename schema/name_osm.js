@@ -8,7 +8,7 @@
   eg. tags['alt_name'] -> doc.name['alternative']
 
   The value 'default' is special, it defines the name used by default
-  for elasticsearch queries, it has the unique ability to specify multiple
+  for opensearch queries, it has the unique ability to specify multiple
   keys with a value of 'default'.
 
   When multiple keys have the value 'default' then they are considered

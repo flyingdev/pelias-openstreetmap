@@ -28,7 +28,8 @@
     "pelias",
     "stream",
     "openstreetmap",
-    "elasticsearch"
+    "elasticsearch",
+    "opensearch"
   ],
   "bugs": {
     "url": "https://github.com/mapzen/pelias-openstreetmap/issues"
